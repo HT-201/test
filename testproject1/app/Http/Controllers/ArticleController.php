@@ -12,6 +12,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
+        // indexというviewを呼び出してる（index.blade）
         return view('index');
     }
 
