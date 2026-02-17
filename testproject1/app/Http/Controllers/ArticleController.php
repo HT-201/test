@@ -12,8 +12,10 @@ class ArticleController extends Controller
      */
     public function index()
     {
+        $message = "Welcome to my BBS";
         // indexというviewを呼び出してる（index.blade）
-        return view('index');
+        // viewの引数に変数を割り当てるとview側で利用できる
+        return view('index', ['message' => $message]);
     }
 
     /**

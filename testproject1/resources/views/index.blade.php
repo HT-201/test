@@ -7,5 +7,6 @@
     </head>
     <body>
         <h1>paiza bbs</h1>
+        <P>{{ $message }}</P>
     </body>
 </html>
