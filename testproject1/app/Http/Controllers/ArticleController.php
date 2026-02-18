@@ -13,9 +13,13 @@ class ArticleController extends Controller
     public function index()
     {
         $message = "Welcome to my BBS";
+
+        // 指定したDBのテーブルのレコードを全取得
+        $articles = Article::all();
+
         // indexというviewを呼び出してる（index.blade）
         // viewの引数に変数を割り当てるとview側で利用できる
-        return view('index', ['message' => $message]);
+        return view('index', ['message' => $message, 'articles' => $articles]);
     }
 
     /**
@@ -37,9 +41,11 @@ class ArticleController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Article $article)
+    public function show(Request $request, $id, Article $article)
     {
-        //
+        $message = 'This is your article'.$id;
+        $article = Article::find($id);
+        return view('show', ['message' => $message, 'article' => $article]);
     }
 
     /**
