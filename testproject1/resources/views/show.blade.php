@@ -11,6 +11,7 @@
 
         <p>{{ $article->content }}</p>
 
+        
         <p>
             <!-- ルーティングで指定した名前でhref記載できる(web.php) -->
             <a href={{ route('article.list') }}>一覧に戻る</a>
