@@ -6,6 +6,9 @@
 // こちらを使う
 // http://localhost:8000/articles
 
+// ターミナルでコマンド
+// php artisan serve
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 
