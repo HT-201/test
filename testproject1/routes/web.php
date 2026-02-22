@@ -9,6 +9,9 @@
 // ターミナルでコマンド
 // php artisan serve
 
+
+// artisan tinkerがターミナルで使えない問題を確認する。
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 
